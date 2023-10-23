@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231023 23:37:20.246" rpa="false" schemaversion="4">
+<suite id="s1" name="Login" source="D:\Project\Robot Framework\step\login.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${webSauceDemo}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231023 23:37:20.465" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/v1/'.</msg>
+<status status="PASS" starttime="20231023 23:37:20.465" endtime="20231023 23:37:23.894"/>
+</kw>
+<test id="s1-t1" name="user login with valid data" line="34">
+<kw name="input Username">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtUsername}</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231023 23:37:23.896" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20231023 23:37:23.895" endtime="20231023 23:37:23.991"/>
+</kw>
+<status status="PASS" starttime="20231023 23:37:23.895" endtime="20231023 23:37:23.992"/>
+</kw>
+<kw name="input password">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtPassword}</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231023 23:37:23.993" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
+<status status="PASS" starttime="20231023 23:37:23.992" endtime="20231023 23:37:24.061"/>
+</kw>
+<status status="PASS" starttime="20231023 23:37:23.992" endtime="20231023 23:37:24.061"/>
+</kw>
+<kw name="Click Button Login">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btnLogin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231023 23:37:24.062" level="INFO">Clicking element 'login-button'.</msg>
+<status status="PASS" starttime="20231023 23:37:24.062" endtime="20231023 23:37:27.204"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231023 23:37:28.205" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20231023 23:37:27.204" endtime="20231023 23:37:28.205"/>
+</kw>
+<status status="PASS" starttime="20231023 23:37:24.062" endtime="20231023 23:37:28.205"/>
+</kw>
+<status status="PASS" starttime="20231023 23:37:23.894" endtime="20231023 23:37:28.206"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231023 23:37:28.207" endtime="20231023 23:37:30.313"/>
+</kw>
+<status status="PASS" starttime="20231023 23:37:20.247" endtime="20231023 23:37:30.313"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
