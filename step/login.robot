@@ -8,7 +8,6 @@ Variables           ../resources/login_locators.py
 ${webSauceDemo}     https://www.saucedemo.com/v1/
 ${BROWSER}          chrome
 
-
 ***Keywords***
 
 input Username
