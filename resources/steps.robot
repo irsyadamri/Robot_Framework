@@ -1,7 +1,7 @@
 ***Settings***
 
 Library             SeleniumLibrary
-Variables           resources/variable.py
+Variables           variable.py
 
 
 ***Keywords***

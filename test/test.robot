@@ -1,6 +1,6 @@
 ***Settings***
 Library     SeleniumLibrary
-Resource    steps/step.robot        
+Resource    resources/steps.robot        
 
 
 ***Test Cases***
