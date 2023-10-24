@@ -1,3 +1,0 @@
-txtUsername =  'user-name'
-txtPassword = 'password'
-btnLogin= 'login-button'
